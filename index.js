@@ -17,48 +17,48 @@
 
 //  alert('file connected');
 
-function getUSA() {
+// function getUSA() {
 
-  let word = 'USA';   
+//   let word = 'USA';   
 
-   let element = document.querySelector('h1');
+//    let element = document.querySelector('h1');
 
-   console.log(`element : ${element.nodeName} -  content : ${element.textContent}`);
+//    console.log(`element : ${element.nodeName} -  content : ${element.textContent}`);
   
-}
+// }
 
 
-getUSA();
+// getUSA();
 
 
 // 2. Sales
 // Define function getPeopleInSales()
 // Print the names of all the people in the sales department.
 
-function getPeopleInSales(){
+// function getPeopleInSales(){
 
-let people = document.querySelectorAll('tr');
-let peopleInSales=[];
+// let people = document.querySelectorAll('tr');
+// let peopleInSales=[];
 
 
-    for(let i=0 ; i<people.length ; i++) {
+//     for(let i=0 ; i<people.length ; i++) {
 
         
-        if (people[i].textContent.includes('Sales')){
+//         if (people[i].textContent.includes('Sales')){
            
-          console.log(people[i].getElementsByClassName("empName")[0].textContent);
+//           console.log(people[i].getElementsByClassName("empName")[0].textContent);
        
-         }
+//          }
 
          
-    }
+//     }
 
     
     
 
-}
+// }
 
-getPeopleInSales();
+// getPeopleInSales();
 
 
 
@@ -68,24 +68,24 @@ getPeopleInSales();
 // Print the contents of <span>
 
 
-function getAnchorChildren(){
+// function getAnchorChildren(){
 
-  let anchorElements = document.getElementsByTagName('a');
+//   let anchorElements = document.getElementsByTagName('a');
    
-  for (let i= 0 ; i< anchorElements.length ; i++){
+//   for (let i= 0 ; i< anchorElements.length ; i++){
     
     
-      if (anchorElements[i].children[0] !== undefined ){
+//       if (anchorElements[i].children[0] !== undefined ){
               
-             console.log(anchorElements[i].children[0].textContent);
+//              console.log(anchorElements[i].children[0].textContent);
           
-      }
+//       }
 
-  }
+//   }
 
 
-}
-getAnchorChildren();
+// }
+// getAnchorChildren();
 
 // 4. Hobbies
 // Define function getHobbies()
@@ -93,19 +93,56 @@ getAnchorChildren();
 // Print the value and the contents.
 
 
-function getHobbies(){
+// function getHobbies(){
+
+// let skillElements =  document.getElementsByName("skills")[0]; 
+ 
+ 
+// for(let i=0; i<skillElements.length; i++){
+       
+
+//     if (skillElements[i].getAttribute('selected') !== null){
+
+//       console.log(skillElements[i].textContent) ;
+
+//     } 
 
 
+// }
 
 
-  
-}
+// }
+
+
+// getHobbies();
+
 
 // 5. Custom Attribute
 // Define function getCustomAttribute()
 // Find all elements with "data-customAttr" attribute
 // Print the value of the attribute.
 // Print the element that has the attribute.
+
+
+// function getCustomAttribute(){
+
+// let allElements = document.querySelectorAll('*');
+// let elementsArr = Array.from(allElements); 
+// elementsArr.forEach((element)=>{
+// let attr;  
+//  if( element.getAttribute('data-customAttr') !== null){
+
+//    console.log(`element : ${element.nodeName} data-customAttr : ${element.getAttribute('data-customAttr')} content : ${element.textContent}`) ;                          
+//  }
+
+
+// })
+
+// }
+
+// getCustomAttribute();
+
+
 // 6. Sum Event
 // NOTE: Write unobtrusive Javascript
 // Regarding these elements:
