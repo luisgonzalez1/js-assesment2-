@@ -153,11 +153,72 @@
 // Add <input> element values.
 // Put the sum in the <span> element.
 // If values cannot be added, put "Cannot add" in the <span> element
+
+
+// let sum =  document.getElementById('sum');
+
+// let results
+// let num1 = document.getElementById('num1');
+// let num2 = document.getElementById('num2');
+
+// let results = num1.textContent+num2.textContent;
+
+// console.log(sum);
+// sum.textContent = 'results';
+
+
+
+
+
+// let num1 = document.getElementById('num1');
+// let num2 = document.getElementById('num2');
+
+// function chaged(){
+
+//   console.log(num1.value);
+//   console.log(num2.value);
+
+//   let results = toString(parseInt(num1.value)+parseInt(num2.value));
+//   sum.textContent = results;
+// }
+// sum.addEventListener('onchange' ,()=>{
+// console.log(num1.value);
+// console.log(num2.value);
+
+
+//   console.log('change triggered');
+// // let results = toString(parseInt(num1.value)+parseInt(num2.value));
+//  results =  parseInt(num1.value)+parseInt(num2.value);
+// sum.textContent = results;
+
+
+
+// })
+
+
+
+
+
 // 7. Skills Event
 // NOTE: Write unobtrusive Javascript
 // When user selects a skill, create an alert with a message similar to:
 //   "Are you sure CSS is one of your skills?"
 // NOTE: no alert should appear when user deselects a skill.
+
+
+ function selectedOpt() {
+  let selected = document.getElementsByName('skills');
+  let selArr = Array.from (selected)
+
+  for(let i=0 ; i<selected.length;i++){
+  //console.log(selected[i].value);
+    alert(`are you sure ${selected[i].value} is one of your skills ? `)
+       
+       }
+  }
+  
+
+
 // 8. Favorite Color Event
 // NOTE: Write unobtrusive Javascript
 // NOTE: This is regarding the favoriteColor radio buttons.
